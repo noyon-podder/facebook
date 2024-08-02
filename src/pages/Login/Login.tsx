@@ -17,8 +17,8 @@ const Login = () => {
       password: data.password,
     };
 
-    await createUser(userData).unwrap();
-
+    const result = await createUser(userData);
+    console.log(result);
     reset();
   };
 
